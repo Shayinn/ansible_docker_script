@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+          - name: DESINSTALAR DHCP
+            apt: name=isc-dhcp-server update_cache=yes state=absent

@@ -1,0 +1,9 @@
+---
+- hosts: webservers  
+  become: yes
+  tasks:
+          - name: INSTALAR DHCP
+            apt: name=isc-dhcp-server update_cache=yes state=latest
+          - name: REINICIAR DHCP
+            service: name=isc-dhcp-server state=restarted
+            become: true

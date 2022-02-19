@@ -1,0 +1,8 @@
+git init
+git add [FICHERO]
+git commit -m "Comentario"
+git remote add origin "https://github.com/Shayinn/script_final.git"
+git push origin master
+
+TOKEN:
+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
